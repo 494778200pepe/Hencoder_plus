@@ -1,4 +1,4 @@
-package com.jcoder.hencoder_plus;
+package com.jcoder.hencoder_plus.plus7;
 
 import android.content.Context;
 import android.graphics.Bitmap;
@@ -12,6 +12,9 @@ import android.graphics.RectF;
 import android.support.annotation.Nullable;
 import android.util.AttributeSet;
 import android.view.View;
+
+import com.jcoder.hencoder_plus.R;
+import com.jcoder.hencoder_plus.Utils;
 
 /**
  * @author wang
@@ -42,7 +45,10 @@ public class AvatarView extends View {
     protected void onDraw(Canvas canvas) {
         super.onDraw(canvas);
         paint.setColor(Color.RED);
+        // 画背景圆
         canvas.drawOval(rectF, paint);
+
+        // 画头像
         int saveLayer = canvas.saveLayer(rectF, paint);
         canvas.drawOval(rectF.left + EDGE_WIDTH, rectF.top + EDGE_WIDTH, rectF.right - EDGE_WIDTH, rectF.bottom - EDGE_WIDTH, paint);
         paint.setXfermode(porterDuffXfermode);

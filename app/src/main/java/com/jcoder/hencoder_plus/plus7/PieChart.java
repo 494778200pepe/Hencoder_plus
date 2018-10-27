@@ -1,4 +1,4 @@
-package com.jcoder.hencoder_plus;
+package com.jcoder.hencoder_plus.plus7;
 
 import android.content.Context;
 import android.graphics.Canvas;
@@ -9,6 +9,8 @@ import android.support.annotation.Nullable;
 import android.util.AttributeSet;
 import android.util.Log;
 import android.view.View;
+
+import com.jcoder.hencoder_plus.Utils;
 
 /**
  * @author wang
