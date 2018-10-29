@@ -19,10 +19,10 @@ public class Utils {
     public static Bitmap getAvatar(Resources resources,float width) {
         BitmapFactory.Options options = new BitmapFactory.Options();
         options.inJustDecodeBounds = true;
-        BitmapFactory.decodeResource(resources, R.drawable.icon, options);
+        BitmapFactory.decodeResource(resources, R.drawable.avatar_rengwuxian, options);
         options.inJustDecodeBounds = false;
         options.inDensity = options.outWidth;
         options.inTargetDensity = (int) width;
-        return BitmapFactory.decodeResource(resources, R.drawable.icon, options);
+        return BitmapFactory.decodeResource(resources, R.drawable.avatar_rengwuxian, options);
     }
 }

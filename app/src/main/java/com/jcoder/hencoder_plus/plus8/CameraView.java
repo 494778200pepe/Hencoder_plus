@@ -170,7 +170,7 @@ public class CameraView extends View {
         camera.rotateX(45);
         camera.applyToCanvas(canvas);
         camera.restore();
-        // clipRect  的时机，对最后图像有没有影响
+        // clipRect  的时机，对最后图像有没有影响   把clip的范围缩小试试看
         canvas.clipRect(-bitmapWidth, 0, bitmapWidth, bitmapWidth);
         canvas.rotate(10);
         canvas.translate(-100 - bitmapWidth / 2, -100 - bitmapWidth / 2);
